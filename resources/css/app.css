@@ -1,0 +1,138 @@
+/* reset */
+*,::after,::before{box-sizing:border-box}*{margin:0}body{line-height:1.5;-webkit-font-smoothing:antialiased}canvas,img,picture,svg,video{display:block;max-width:100%}button,input,select,textarea{font:inherit}h1,h2,h3,h4,h5,h6,p{overflow-wrap:break-word}
+
+/* basics */
+body {
+    background-color: #f0f0f0;
+    color: #222;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* typography */
+h1, h2, p {
+    line-height: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+h1 {
+    font-size: 1.8rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+}
+
+@media (min-width: 80rem) {
+    h1 {
+        font-size: 2.4rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+a:link, a:visited {
+    color: #ec008c;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: #a20060;
+    text-decoration: underline;
+}
+
+/* containers */
+.inner {
+    margin: 0 auto;
+    padding: 1.5rem 2rem;
+}
+
+@media (min-width: 80rem) {
+    .inner {
+        width: 76rem;
+    }
+}
+
+/* header */
+header img {
+    width: 6rem;
+}
+
+@media (min-width: 60rem) {
+    header img {
+        width: 10rem;
+    }
+}
+
+/* nav */
+nav {
+    background-color: #d0d0d0;
+}
+
+nav .inner {
+    display: flex;
+    gap: 2rem;
+    padding: 0 2rem;
+}
+
+nav a {
+    display: block;
+    padding: 1rem 0;
+}
+
+/* main content */
+main {
+    background-color: #fff;
+}
+
+/* product grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    row-gap: 1.5rem;
+}
+
+@media (min-width: 40rem) {
+    .product-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        column-gap: 1.5rem;
+    }
+}
+
+@media (min-width: 60rem) {
+    .product-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+
+.product-grid a {
+    border: 1px solid #f0f0f0;
+    border-radius: 0.25rem;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.product-grid a:hover, .product-grid a:active {
+    box-shadow: 0 0 2px #e0e0e0;
+}
+
+.product-grid img {
+    margin-bottom: 1.5rem;
+}
+
+/* product page */
+.product-page {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    row-gap: 1.5rem;
+}
+
+@media (min-width: 40rem) {
+    .product-page {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        column-gap: 1.5rem;
+    }
+}
