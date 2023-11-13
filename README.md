@@ -32,7 +32,6 @@ Configure your database connection in the .env file. For simplicity, you can cre
 
 
 	DB_CONNECTION=sqlite
-	DB_DATABASE="C:\\exercise\\database\\database.sqlite"
 	DB_FOREIGN_KEYS=true
 
 
@@ -41,6 +40,8 @@ Configure your database connection in the .env file. For simplicity, you can cre
 `php artisan migrate --seed`
 
 `npm install`
+
+`composer require doctrine/dbal`
 
 `php artisan serve`
 
